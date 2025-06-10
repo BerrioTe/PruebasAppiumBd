@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">AppAmazon</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="867356844ccae98249c1db7f715bcb75c44481a46ccb027a75801c2c5c24aa51.html">Realizar Compra En Amazon</a></span>
+                > <span class="truncate-60"><a
+                    href="0e037378573d1866880e3ee1f4c2c978115580c2056f2d58eb0aa20eb44ba71f.html">Compra Exitosa </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 04-09-2024 10:55</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Realizar Compra En Amazon </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="b7e33abe7619d82cefda21fe358074425199aafab4998745a7f9803cfbdd6a6a.html">Compra
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon fa-2x' title='ERROR'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="error-color">Compra Exitosa
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Assertion error: An element could not be located on the page using the given search parameters.</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>com.amazon.stepdefinitions.CompraAmazonStepDef.verificaraLosProductosAgregados(CompraAmazonStepDef.java:24)<br />✽.verificara los productos agregados(file:///C:/Users/USUARIO/Desktop/PruebasAppium/AppAmazon/src/test/resources/features/compraAmazon.feature:7)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                    <div class="panel-body">
+                        <a href="pagesource3971067183062997400.html" target="_blank" class="btn btn-info">HTML Source</a>
+                    </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="bd7f3a6c63f6e876e777ae8e9241398317b8e956e6c4b962002d19e6fd9df01f.png" title=" Dado que el usuario se encuentra en la App de Amazon" width="1080"/>
+                <img src="478dd8886813d6aa3dba7ed3290538aaa7c12e057156f3617d27b9fdb4c083a6.png" title=" Dado que el usuario se encuentra en la App de Amazon (completed)" width="1080"/>
+                <img src="b9f31a704551528d4b30d8ecfd0fa2727352a360131eb00881cc0bf496ad0ab1.png" title=" Cuando agregue productos al carrito" width="1080"/>
+                <img src="b9f31a704551528d4b30d8ecfd0fa2727352a360131eb00881cc0bf496ad0ab1.png" title=" Compra task comprar producto" width="1080"/>
+                <img src="90ee754fe51e82b1ea4ef06f5a7e5b5efc801a5d6d57571cab20d3907d4b9a84.png" title=" user clicks on " width="1080"/>
+                <img src="6f1167e87c76bc5ef05c99738f4f6b1ce51770c0d23dfcbb5fc9389765af0025.png" title=" user clicks on  (completed)" width="1080"/>
+                <img src="0d13a481ecfa3dd6fdae9b6f636ef4f22afcc5772ffad98b94836fe5e79658db.png" title=" user enters 'NEVERA' into " width="1080"/>
+                <img src="c8fa7e3f4c251f2fba9e95e52bb8999614d3d28b27258fdbd4c426b2adf573ba.png" title=" user enters 'NEVERA' into  (completed)" width="1080"/>
+                <img src="114b85ee783b6a93615e44113b35e665421e6fce6cca139430a6251a7fbf3530.png" title=" Seleccionar busqueda task seleccionar busqueda" width="1080"/>
+                <img src="8625540b9660be02f211ac014b9e7e15212bf04830d6a73c3fe04c33081e4e12.png" title=" User seleccionar elementos iteration" width="1080"/>
+                <img src="114b85ee783b6a93615e44113b35e665421e6fce6cca139430a6251a7fbf3530.png" title=" User seleccionar elementos iteration (completed)" width="1080"/>
+                <img src="85687b3b9cbfabd025da463f22db4cb269edd373ba9ef522515f8ffc61d7f6d9.png" title=" Seleccionar producto task seleccionar producto" width="1080"/>
+                <img src="7bccae86d4b8859c039b0cb714d348c0fc8acc2c3bfa0d238fb0dd22f3067f11.png" title=" User seleccionar elementos iteration" width="1080"/>
+                <img src="7bccae86d4b8859c039b0cb714d348c0fc8acc2c3bfa0d238fb0dd22f3067f11.png" title=" Seleccionar producto task seleccionar producto (completed)" width="1080"/>
+                <img src="09e5602c332c008f1a9b1dab808df57d2ce9a0c6f7a139db42cbd894c6783c44.png" title=" user clicks on " width="1080"/>
+                <img src="152fcf2d1ed042eeb6d23561e4fced85aeece0d23f7141a7914fb0cf1033b0f2.png" title=" user clicks on  (completed)" width="1080"/>
+                <img src="152fcf2d1ed042eeb6d23561e4fced85aeece0d23f7141a7914fb0cf1033b0f2.png" title=" user enters 'IMPRESORA' into " width="1080"/>
+                <img src="f38fa85e8e06e936b7d8937bd2c2068233cf112ff3c9ca41649aa283bd729266.png" title=" user enters 'IMPRESORA' into  (completed)" width="1080"/>
+                <img src="572fb0e0762760666b5ec38d6a4ef223b92ab3c0d1df53d1cdf8feea9accd838.png" title=" Seleccionar busqueda task seleccionar busqueda" width="1080"/>
+                <img src="6e74467a6630a43470ad87d530c2101ce04221421ec742ae5b0e42e0d46f8209.png" title=" User seleccionar elementos iteration" width="1080"/>
+                <img src="572fb0e0762760666b5ec38d6a4ef223b92ab3c0d1df53d1cdf8feea9accd838.png" title=" User seleccionar elementos iteration (completed)" width="1080"/>
+                <img src="7f2a4972e781647dfd9f371d589a6d8b0199ae84c16f24a8b2346084ecc5b5e2.png" title=" Seleccionar producto task seleccionar producto" width="1080"/>
+                <img src="c6502f45437d7a44389e4ec1bc8aa78903c655edc85fe0bcf751ebb303354184.png" title=" User seleccionar elementos iteration" width="1080"/>
+                <img src="c6502f45437d7a44389e4ec1bc8aa78903c655edc85fe0bcf751ebb303354184.png" title=" Seleccionar producto task seleccionar producto (completed)" width="1080"/>
+                <img src="0ddfd8a1c7be0dcf7d15d8541cce6d84b4396edcec065c1a4bd56ce064492d06.png" title=" user clicks on Select option Add to cart" width="1080"/>
+                <img src="dcb5ead0d17d47677e1d77d80d75891de2ecb323c5be901b8dbd1d61e2262545.png" title=" user clicks on Select option Add to cart (completed)" width="1080"/>
+                <img src="dcb5ead0d17d47677e1d77d80d75891de2ecb323c5be901b8dbd1d61e2262545.png" title=" Compra task comprar producto (completed)" width="1080"/>
+                <img src="0afb6c609eeb95d22335f52bed65a5c2127b064fc4c14d792d9893461790cf51.png" title=" Cuando agregue productos al carrito (completed)" width="1080"/>
+                <img src="0afb6c609eeb95d22335f52bed65a5c2127b064fc4c14d792d9893461790cf51.png" title=" Entonces verificara los productos agregados" width="1080"/>
+                <img src="e5cf8516bd7a3fac8268de80ea19e387541c954bb2034ebccc4801318509a64f.png" title=" Then validar productos question: <span class='error-color'>ERROR</span>" width="1080"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.6.0</span>
+</div>
+</body>
+</html>
